@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,17 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
 </head>
+
 <body>
-    
+
     <header>
-        <h1>Crystal Collector!</h1>
+        <div>
+            <h1>Crystal Collector!</h1>
+        </div>
     </header>
 
     <Main>
@@ -22,8 +28,8 @@
 
             <p>You will be given a random number at the begining of this game.</p>
 
-            <p>There are four crystals below.  By clicking on a crystal, 
-                you will add a specific number of points to your total score. 
+            <p>There are four crystals below. By clicking on a crystal,
+                you will add a specific number of points to your total score.
             </p>
 
             <p>You win by matching your total score tot he random number;
@@ -34,39 +40,57 @@
             </p>
 
             <p>
-                Each crystal's value changes each time the game starts. 
+                Each crystal's value changes each time the game starts.
             </p>
         </div>
 
-        <div></div>
-
         <div>
-            <img src="assets/images/gemred.jpeg" alt="Red Gem">
-            <img src="assets/images/gemgreen.jpeg" alt="Green Gem">
-            <img src="assets/images/gempink.jpeg" alt="Pink Gem">
-            <img src="assets/images/gemorange.jpeg" alt="Orange Gem">
+            <h2>Number to get:
+                <span id="randomNumber"></span>
+            </h2>
         </div>
 
-        <div>
-            <div>Your total score is:</div>
-            <br>
-            <div>0</div>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3">
+                <img src="assets/images/gemred.jpeg" alt="Red Gem">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <img src="assets/images/gemgreen.jpeg" alt="Green Gem">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <img src="assets/images/gempink.jpeg" alt="Pink Gem">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <img src="assets/images/gemorange.jpeg" alt="Orange Gem">
+            </div>
         </div>
 
-        <div>
-            <p>Wins:</p>
-            <p>0</p>
-            <p>Losses:</p>
-            <p>0</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Your total score is:
+                    <span id="finalTotal"></span>
+                </h2>
+            </div>
+
+            <div class="col-sm-6">
+                <h2>Wins:
+                    <span id="numberWins"></span>
+                </h2>
+                <br>
+                <h2>Losses:
+                    <span id="numberLosses"></span>
+                </h2>
+            </div>
         </div>
-        
+
     </Main>
 
 
 
 
 
-
-    <script src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
