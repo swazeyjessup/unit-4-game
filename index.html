@@ -23,8 +23,8 @@
     </header>
 
     <Main>
-        <div>
-            <h2>Instructions:</h2>
+        <div class="one">
+            <h2 class="instructions">Instructions:</h2>
 
             <p>You will be given a random number at the begining of this game.</p>
 
@@ -44,7 +44,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="two">
             <h2>Number to get:
                 <span id="randomNumber"></span>
             </h2>
@@ -52,27 +52,27 @@
 
         <div class="row">
             <div class="col-xs-3 col-sm-3">
-                <img src="assets/images/gemred.jpeg" alt="Red Gem">
+                <img id="red" src="assets/images/gemred.jpeg" id="red" alt="Red Gem">
             </div>
             <div class="col-xs-3 col-sm-3">
-                <img src="assets/images/gemgreen.jpeg" alt="Green Gem">
+                <img id="green" src="assets/images/gemgreen.jpeg" alt="Green Gem">
             </div>
             <div class="col-xs-3 col-sm-3">
-                <img src="assets/images/gempink.jpeg" alt="Pink Gem">
+                <img id="pink" src="assets/images/gempink.jpeg" alt="Pink Gem">
             </div>
             <div class="col-xs-3 col-sm-3">
-                <img src="assets/images/gemorange.jpeg" alt="Orange Gem">
+                <img id="orange" src="assets/images/gemorange.jpeg" alt="Orange Gem">
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row" id="three">
+            <div class="col-sm-6" id="four">
                 <h2>Your total score is:
                     <span id="finalTotal"></span>
                 </h2>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="five">
                 <h2>Wins:
                     <span id="numberWins"></span>
                 </h2>
@@ -80,6 +80,7 @@
                 <h2>Losses:
                     <span id="numberLosses"></span>
                 </h2>
+                <br>
             </div>
         </div>
 

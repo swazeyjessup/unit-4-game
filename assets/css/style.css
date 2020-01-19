@@ -1,12 +1,48 @@
-body{
+
+
+header{
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
+    margin: auto;
+    text-align: center;
+    color: #cc375b;
+    background-color: whitesmoke;
+    
+}
+.instructions{
+    color: #b3ce4b;
+}
+.one{
+    background-color: whitesmoke;
+}
+.two{
+    color: #cf4287;
+    background-color: whitesmoke;
+}
+#three{
+    color: #d8712d;
+}
+#four{
+    background-color: whitesmoke;
+    
+}
+#five{
+    background-color: whitesmoke;
+}
+main{
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
 }
 
 img{
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180px;
     margin: 20px;
     padding: 10px;
+}
+body{
+    background-size: 100%;
+    background-image: url(/assets/images/diamond_upholstery/diamond.png);
 }
